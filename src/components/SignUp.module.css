@@ -52,7 +52,7 @@
   position: relative;
 }
 
-.formField:nth-child(7){
+.formField:nth-child(5){
   height: 60px;
 }
 
@@ -70,7 +70,7 @@
 .formInput {
   line-height: 40px;
   border-radius: 0.5em;
-  padding: 0 1.2em;
+  padding: 0 1em;
   background: #fdfefd;
   color: #1d1d1d;
   transition: all 0.2s ease-in;
@@ -81,7 +81,7 @@
 .uncompleted {
   line-height: 40px;
   border-radius: 0.5em;
-  padding: 0 1.2em;
+  padding: 0 1em;
   border: 1px solid #e22423;
   background: #fdfefd;
   color: #1d1d1d;
@@ -160,11 +160,11 @@ input[type="checkbox"]:focus {
 
 .formButtons button {
   background: linear-gradient(to right, #595fff, #3e40f0);
-  padding: 1em 1.5em;
+  padding: .9em 1.5em;
   color: #fdfdfd;
   border-radius: 0.5em;
   border: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 700;
   transition: all 0.3s ease-in;
   cursor: pointer;
@@ -194,7 +194,6 @@ input[type="checkbox"]:focus {
     width: fit-content;
     display: flex;
     gap: 0 9em;
-    align-items: start;
     padding: 3em;
     border-radius: 1em;
     background: #fdfefd;

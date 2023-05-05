@@ -5,6 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { notify } from "./toast";
 import styles from "./SignUp.module.css";
 import graphImg from './graph.png'
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
   const [data, setData] = useState({
@@ -18,7 +19,8 @@ const SignUp = () => {
   const [touched, setTouched] = useState({});
 
   useEffect(() => {
-    setErrors(validate(data));
+    setErrors(validate(data, "signup"));
+    document.title = "Sign up"
   }, [data, touched]);
 
   const changeHandler = (event) => {
@@ -69,7 +71,7 @@ const SignUp = () => {
         </h2>
 
         </div>
-        
+
         <div>
 
         <div className={styles.formField}>
@@ -163,7 +165,7 @@ const SignUp = () => {
         </div>
 
         <div className={styles.formButtons}>
-          <a href="#">Login</a>
+          <Link to="/login">Login</Link>
           <button type="submit">Sign up</button>
         </div>
 
