@@ -1,0 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  appearance: none;
+  border: none;
+}
+
+.container {
+  background: #fdfefd;
+  min-height: 100vh;
+}
+
+.formContainer {
+  width: 100%;
+  background: #fdfefd;
+  padding: 4em 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.graphTop {
+  position: absolute;
+  top: -11em;
+  left: -10em;
+}
+
+.graphTop img {
+  width: 100%;
+}
+
+.header {
+  text-align: left;
+  margin-bottom: 3.5em;
+  font-size: 2.5rem;
+  color: #fdfefd;
+  position: relative;
+  padding-left: .3em;
+}
+
+.header div {
+  font-size: 1.1rem;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 17.5px;
+  height: 75px;
+  position: relative;
+}
+
+.formField:nth-child(7){
+  height: 60px;
+}
+
+.formField label {
+  text-align: left;
+  color: #5f5f5f;
+  padding: 0 0.25em;
+  background: #fdfdfd;
+  font-size: 0.9rem;
+  position: absolute;
+  top: -0.55em;
+  left: 1em;
+}
+
+.formInput {
+  line-height: 40px;
+  border-radius: 0.5em;
+  padding: 0 1.2em;
+  background: #fdfefd;
+  color: #1d1d1d;
+  transition: all 0.2s ease-in;
+  border: 1px solid #9f9f9f;
+  font-size: 1rem;
+}
+
+.uncompleted {
+  line-height: 40px;
+  border-radius: 0.5em;
+  padding: 0 1.2em;
+  border: 1px solid #e22423;
+  background: #fdfefd;
+  color: #1d1d1d;
+  font-size: 1rem;
+  transition: all 0.2s ease-in;
+}
+
+.formInput:focus,
+.uncompleted:focus {
+  outline: none;
+  line-height: 40px;
+  border: 1px solid #595fff;
+}
+
+.formField span {
+  height: 10px;
+  text-align: left;
+  margin-top: 5px;
+  width: fit-content;
+  font-size: 0.8rem;
+  color: #e22423;
+  line-height: 10px;
+  padding: 2px 3px;
+  border-radius: 3px;
+}
+
+
+.checkBoxContainer {
+  display: flex;
+  align-items: center;
+  gap: 0 .5em;
+}
+
+.formField:nth-child(5) label {
+  padding: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: none;
+  font-size: 1rem;
+}
+
+.formField:nth-child(5) label span {
+  background: none;
+  color: #595fff;
+  font-size: 1rem;
+  padding: 0;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #595fff;
+  border-radius: 5px;
+  transition: all 0.2s ease-in;
+}
+
+input[type="checkbox"]:checked {
+  width: 18px;
+  height: 18px;
+  background: #595fff;
+}
+
+input[type="checkbox"]:focus {
+  height: 18px;
+  width: 18px;
+  outline: none;
+}
+
+.formButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 .7em;
+}
+
+.formButtons button {
+  background: linear-gradient(to right, #595fff, #3e40f0);
+  padding: 1em 1.5em;
+  color: #fdfdfd;
+  border-radius: 0.5em;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.formButtons button:active {
+  transform: scale(0.9);
+}
+
+.formButtons a {
+  color: #595fff;
+  text-decoration: none;
+  transition: all 0.1s ease-in;
+  font-weight: 700;
+  font-size: 1.4rem;
+  transition: all 0.3s ease-in;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .formContainer {
+    width: fit-content;
+    display: flex;
+    gap: 0 9em;
+    align-items: start;
+    padding: 3em;
+    border-radius: 1em;
+    background: #fdfefd;
+    box-shadow:  5px 5px 40px #cacbca,
+                 -5px -5px 40px #ffffff;
+  }
+  .formButtons{
+    padding: 0;
+  }
+}
