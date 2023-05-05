@@ -52,7 +52,7 @@ const Login = () => {
         </div>
 
         <h2 className={styles.header}>
-          <div>Welcom Back,</div>
+          <div>Welcome Back,</div>
           Log In!
         </h2>
 

@@ -11,7 +11,7 @@
 
 ---
 
-## tips
+## Tips
 
 - Fully responsive for mobile, tablet, laptop and desktop
 
